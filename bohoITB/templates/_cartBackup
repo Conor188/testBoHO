@@ -1,0 +1,93 @@
+<?php
+		
+require_once __DIR__ . '/_header.php';
+
+	
+$pageTitle = 'cart';
+
+?>
+<hr>
+<h3>shopping cart</h3>
+<h3> The items in your cart are: </h3>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>sub-total</th>
+        <th>(remove)</th>
+    </tr>
+	
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>	
+	
+	
+	
+<?php
+//-----------------------------LOOP Throough the items in the cart and display -------//
+$total = 0;
+
+$ListOneP = new USER();
+//	$product = $ListOneP->get_one_product($id);
+
+foreach($shoppingCart as $id=>$quantity):
+
+    $product = $ListOneP->get_one_product($id);
+    $price = $product['price'];
+    $subTotal = $price * $quantity;
+    $total += $subTotal;
+//-----------------------------
+?>
+    <tr>
+    <td><?= $product['description'] ?></td>
+    <td>&euro; <?= $price ?></td>
+    <td><?= $quantity ?></td>
+    <td><?= $subTotal ?></td>
+    <td><a href="index.php?action=removeFromCart&id=<?= $product['id'] ?>">(remove from cart)</a></td>
+
+    </tr>
+
+<?php
+//-----------------------------
+endforeach;
+//-----------------------------
+?>
+
+    <tr>
+        <td colspan="3">Total</td>
+        <td>&euro; <?= $total ?></td>
+    </tr>
+
+</table>
+
+<a href="index.php?action=emptyCart">EMPTY CART</a>
+<br>
+<a href="index.php?action=indexAction">Back to shop</a>
+<br>

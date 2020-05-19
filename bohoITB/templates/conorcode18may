@@ -1,0 +1,26 @@
+
+ 
+
+/*
+
+ 
+
+              $auth_user = new USER();
+
+ 
+
+$auth_user->delete_basket_from_DB($user_id);
+
+ 
+
+foreach($shoppingCart as $key=>$quantity):
+
+    $pid  = $key;
+
+              for ($x = 0; $x <= $quantity ;$x++)
+
+              $auth_user->add_basket_to_DB($user_id, $pid);
+
+endforeach;
+
+*/

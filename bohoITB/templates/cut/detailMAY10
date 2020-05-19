@@ -1,0 +1,74 @@
+<?php
+//-------- page header -------------------
+$pageTitle = 'show details of one product';
+require_once __DIR__ . '/_header.php';
+//----------------------------------------
+?>
+ <div class="col-lg-9" >
+		
+        
+        <div class="row">
+
+
+ 
+  <div class="card mb-3" style="max-width: 800px;">
+  <div class="row no-gutters">
+ 
+    <div class="col-md-5">
+     <img src="<?=$product['image'] ?>" class="details"> 
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+ 
+ <h5 class="card-title">Product Name:  <?=$product['name'] ?></h5>
+	<dt>ID</dt>
+		<dd><?= $product['product_id'] ?></dd>
+    <dt>description</dt>
+		<dd  class="card-text"><?= $product['description'] ?></dd>
+	 <dt>price</dt>
+		<dd  class="card-text"><?= $product['price'] ?></dd>	
+		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        
+		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <dl>
+   
+
+   
+	<form action="add_cart.php" method="post" id="add_product_form">
+               <input type="hidden" name="product_id" value="">
+					<input type="hidden" name="available" id="available" value="">              
+					<div class="form-row">
+						<div class="form-group ">
+							<div class="col-xs-2">			
+								<label for="size" class="card-text">Size:</label>
+										<select name="size" id="size" class="form-control">
+											<option value="">Please select size</option>
+												<option value="">S</option>
+												<option value="">M</option>
+												<option value="">L</option>
+											</select>
+				</div>
+				<div class="col-xs-2">	
+				 <label for="quantity" id="quantity-label">Quantity:</label>
+                 <input type="number" class="form-control" id="quantity" name="quantity" min="0" placeholder="Please enter quantity">
+				</div>
+
+
+
+
+							</div>	
+					</div>
+				</form>
+	  
+	  
+	  </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

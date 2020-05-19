@@ -1,0 +1,4 @@
+require_once '../src/db_connection.php';
+
+
+ <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">details</button>

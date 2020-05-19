@@ -1,0 +1,129 @@
+ <div class="col-lg-6">
+        <div class="row">   
+			<div class="card">
+				<div class="card-header">
+					Welcome: <?php print($userRow['username']); ?>
+				</div>
+				<div class="card-body">
+						<table class="table">
+							<thead>
+							<tr>
+							<th scope="col">Account </th>
+							<th scope="col">Details </th>
+							</tr>
+							</thead>
+							<tbody>
+	
+								<tr>
+									<th scope "row">ID Number: </th>
+									<td> <?php print($userRow['id']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Username:</th>
+									<td> <?php print($userRow['username']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Mail:</th>
+									<td> <?php print($userRow['email']); ?></td>
+								<tr>
+									<th scope "row">Address:</th>
+									<td> <?php print($userRow['address']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Contact Number:</th>
+									<td> <?php print($userRow['contact_number']); ?></td>
+								</tr>
+								
+								</tbody>
+							</table> 
+							<a href="#" class="btn btn-primary">Edit Details</a>
+					</div>
+				</div> 
+			</div>
+		
+
+ 
+ <body>   <!-----------Print the username to the screen of the logged-in user----->
+  <div class="col-lg-6">
+        <div class="row">   
+			<div class="card">
+				<div class="card-header">
+					Welcome: <?php print($userRow['username']); ?>
+				</div>
+				<div class="card-body">
+						<table class="table">
+							<thead>
+							<tr>
+							<th scope="col">Account </th>
+							<th scope="col">Details </th>
+							</tr>
+							</thead>
+							<tbody>
+	
+								<tr>
+									<th scope "row">ID Number: </th>
+									<td> <?php print($userRow['id']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Username:</th>
+									<td> <?php print($userRow['username']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Mail:</th>
+									<td> <?php print($userRow['email']); ?></td>
+								<tr>
+									<th scope "row">Address:</th>
+									<td> <?php print($userRow['address']); ?></td>
+								</tr>
+								<tr>
+									<th scope "row">Contact Number:</th>
+									<td> <?php print($userRow['contact_number']); ?></td>
+								</tr>
+								
+								</tbody>
+							</table> 
+							<a href="#" class="btn btn-primary">Edit Details</a>
+					</div>
+				</div> 
+			</div>
+		
+
+ 
+  <div class="col-lg-9">
+	<div class="row">
+	</div>
+	</br>
+	<table class="table">
+		<thead>
+			<tr>
+			  <th scope="col">ID</th>
+			  <th scope="col">Name</th>
+			  <th scope="col">Price</th>
+			  <th scope="col">Handle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Mark</td>
+			  <td>Otto</td>
+			  <td>@mdo</td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Jacob</td>
+			  <td>Thornton</td>
+			  <td>@fat</td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>Larry</td>
+			  <td>the Bird</td>
+			  <td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<br>
+</div>
+</div>

@@ -1,0 +1,14 @@
+{
+   "autoload": {
+       "files":[
+	        "src/functions.php"		 
+	    ]
+   },
+   "require": {
+      "twig/twig": "^3.0"
+   },
+   
+   "psr-4": {
+   "Itb\\":"src"
+   }
+}

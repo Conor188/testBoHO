@@ -1,0 +1,62 @@
+img.details{
+  width:auto;
+  margin: 15px auto;
+  height: 400px;
+  
+}
+body { 
+    padding-top: 60px; 
+	
+}
+
+.list-group-item.active {
+	background-color: grey;
+	border-color: grey;
+}
+
+.card mb-3 {
+	padding-top: 60px;
+}
+
+
+
+.img-thumbnail{
+	height:80px;
+	width:80px;
+}
+
+/*.navbar-nav .nav-item .nav-link {
+    color: red;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: pink;
+}
+*/
+
+.list-group-item-mine {
+ 
+ text-decoration:none;
+}
+
+
+}
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+  z-index: 1;
+  color: #red;
+  text-decoration: none;
+  background-color: #green;
+}
+a:hover{
+	text-decoration:none;
+	color:green;
+}
+a:link{
+	color:black;
+}
+
+.carousel img{
+	
+	width:100%;
+}

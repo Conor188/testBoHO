@@ -1,0 +1,12 @@
+function get_one_product($connection, $id)
+	
+{
+    $sql = "SELECT * FROM products WHERE id=$id";
+    $statement = $connection->query($sql);
+
+    if ($row = $statement->fetch()) {
+        return $row;
+    } else {
+        return null;
+    }
+}

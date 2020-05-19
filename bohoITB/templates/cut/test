@@ -1,0 +1,6 @@
+<?php
+require_once 'connect.php';
+
+try
+$datatase=new Connection{};
+$db = $database->openConnection();

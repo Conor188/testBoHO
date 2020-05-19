@@ -1,0 +1,103 @@
+img.details{
+  width:auto;
+  margin: 15px auto;
+  height: 400px;
+  
+}
+body { 
+    padding-top: 60px; 
+	
+}
+
+
+img.brimage{
+	border-style: solid;
+	border-color: black;
+}
+
+
+
+.list-group-item.active {
+	background-color:#343a40;
+	border-color: #343a40;
+	color:white;
+	
+}
+
+.list-group-item.active{
+	background-color:#343a40;
+	border-color: #343a40;
+	color:white;
+	
+}
+
+.drop-down-menu.active {
+	background-color: grey;
+	border-color: grey;
+	font:white;
+}
+
+.dropdown-menu.active{
+    color: black grey;
+}
+
+.card mb-3 {
+	padding-top: 60px;
+}
+
+.redtext{
+	color:red:
+}
+
+
+
+.list-group-mine .list-group-item {
+ 
+  color:black;
+}
+.list-group-item-mine:active{
+	color:white;
+}
+
+
+/*.list-group-mine .list-group-item:hover {
+  background-color: red;
+}
+*/
+
+.img-thumbnail{
+	height:80px;
+	width:80px;
+}
+
+/
+.carousel .carousel-inner{
+height:100%;
+width:100%;
+}
+.carousel-inner .carousel-item img{
+min-height:200px;
+//prevent it from stretch in screen size < than 768px
+object-fit:cover
+}
+
+@media(max-width:768px){
+.carousel .carousel-inner{
+//prevent it from adding a white space between carousel and container elements
+height:auto
+ }
+}
+
+a.list-group-item{
+	font:white;
+}
+
+a:visited {
+	color:PINK;
+}
+a:active {
+color:white;
+}
+a:hover {
+	text-decoration:none;
+}	

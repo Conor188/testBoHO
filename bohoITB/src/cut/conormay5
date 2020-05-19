@@ -1,0 +1,79 @@
+
+    $connection = connect_to_db();
+
+ 
+
+    $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+    $product = get_one_product($connection, $id);
+
+ 
+
+    if(null == $product){
+
+        $message = 'sorry, no product with id = ' . $id . ' could be retrieved from the database';
+
+ 
+
+        // output the detail of product in HTML table
+
+        require_once __DIR__ . '/../templates/message.php';
+
+    } else {
+
+        // output the detail of product in HTML table
+
+        require_once __DIR__ . '/../templates/detail.php';
+
+    }
+
+}
+
+ 
+
+ 
+
+ 
+
+Product function
+
+ 
+
+ 
+
+ 
+
+function get_one_product($connection, $id)
+
+{
+
+                           $sql = "SELECT * FROM products WHERE id =:id";    
+
+                           $stmt = $connection->prepare($sql);
+
+                           $stmt->execute([':id' => $id]);
+
+                           if ($row = $stmt->fetch()) {
+
+                                         return $row;
+
+                                                       VAR_DUMP($row);
+
+                                         } else {
+
+        return null;
+
+    }
+
+}
+
+ 
+
+ 
+
+Sent from Mail for Windows 10
+
+ 
+
+
+	Virus-free. www.avg.com

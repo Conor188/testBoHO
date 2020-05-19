@@ -1,0 +1,40 @@
+composer dump-autoload
+
+
+
+namespace Itb;
+
+class Student
+{
+	private $name;
+	private $gpa;
+	
+
+
+
+just start every script with 
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+put all functionality in .json
+
+files and classes
+
+
+
+//put namesspace in Composer.json
+
+{
+	"autoload" : {
+		"psr-4" :{
+		"itb\\":"src"
+		}
+	}		
+}
+
+//command to update
+
+$ composer dump-autoload
+
+
+
